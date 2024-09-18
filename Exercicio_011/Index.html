@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>
+        Imagem dinamica
+    </h1>
+    <p>
+        Tente abrir esse arquivo varios dispositivos diferentes
+    </p>
+    <picture>
+        <source media="(max-width: 500px)" srcset="Imagens/300.png" type="image/png">
+        <source media="(max-width: 750px)" srcset="Imagens/700.png" type="image/png">
+        <img src="Imagens/1000.png" alt="Imagem Flex">
+    </picture>
+<h1>
+    Reproduzindo Audio
+</h1>
+<p>
+    Clique no play para ouvir o som do carro
+</p>
+<img src="Imagens/f1mc.png" alt="Imagem Flex">
+<audio src="midia/formula1.mp3" controls type="audio/mpeg"></audio>
+
+<video width="500" poster="Imagens/alphatauri.jpg" controls autoplay>
+    <source src="midia/atauri.mp4" type="video/mp4">
+    <!--Nesse modelo há um custo elevado pois consome muinta banda-->
+</video>
+<p></p>
+<iframe 
+    width="560" height="315" src="https://www.youtube.com/embed/kfwE65kJLdI?si=JbWCuX-GDJJKeHqN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+</body>
+</html>
