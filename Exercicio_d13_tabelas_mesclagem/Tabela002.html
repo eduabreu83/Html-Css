@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Média de Alunos</title>
+
+    <style>
+        table{
+          width: 500px;
+          border-collapse: collapse;
+          position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight: bold;
+            background-color: lightgrey;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        .media {
+            text-align: left;
+            background-color: gray;
+            color: white;
+        }
+        .medianum{
+            text-align: center;
+            background-color: gray;
+            color: white;
+        }
+        .th {
+            text-align: center;
+            background-color: gray;
+            color: white;
+        }
+        col.dis{
+            background-color: bisque;
+        }
+        col.notas{
+            background-color: antiquewhite;
+        }
+
+
+    </style>
+</head>
+
+<body>
+        <!--
+        ANATOMINA DA TABELA
+        CAPITION = LEGENDA/ TITULO DA TABELA
+
+        THEAD
+            TR = LINHA, TD = DADO,TH = CABEÇALHO
+        TBODY
+            TR,TD,TH
+        TFOOT
+            TR,TD TH
+        -->
+
+        <table>
+            <thead>
+
+                <colgroup>
+                    <col class="area">
+                    <col class="dis">
+                    <col class="notas" span="2">
+                    <col class="md">
+                </colgroup>
+
+                <caption>Quadro de notas dos Alunos</caption>
+                <tr class="th">
+                    <th rowspan="2" scope="rowgroup">Área</th>
+                    <th rowspan="2" scope="rowgroup">Disciplinas</th>
+                    <th colspan="2" scope="colgroup">Notas</th>
+                    <th rowspan="2" scope="rowgroup">Médias</th>
+                </tr>
+                <tr class="th">
+                    <td>Nota 1</td>
+                    <td>Nota 2</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th rowspan="4" scope="rowgroup">Exatas</th>
+                    <td>Matematica</td>
+                    <td>10.0</td>
+                    <td>7.0</td>
+                    <td>8.5</td>
+                </tr>
+                <tr>
+                    <td>Fisica</td>
+                    <td>10.0</td>
+                    <td>7.0</td>
+                    <td>8.5</td>
+                </tr>
+                <tr>
+                    <td>Quimica</td>
+                    <td>10.0</td>
+                    <td>7.0</td>
+                    <td>8.5</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td>10.0</td>
+                    <td>7.0</td>
+                    <td>8.5</td>
+                </tr>
+                <tr>
+                    <th class="media" colspan="4" scope="colgroup">Média Exatas</th>
+                    <td class="medianum">8.5</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Humanas</th>
+                    <td>História</td>
+                    <td>10.0</td>
+                    <td>7.0</td>
+                    <td>8.5</td>
+                </tr>
+                <tr>
+                    <td>Geográfia</td>
+                    <td>10.0</td>
+                    <td>7.0</td>
+                    <td>8.5</td>
+                </tr>
+                <tr>
+                    <th class="media" colspan="4" scope="colgroup">Média Humanas</th>
+                    <td class="medianum">8.5</td>
+                </tr>
+
+            </tbody>
+        </table>
+</body>
+</html>
