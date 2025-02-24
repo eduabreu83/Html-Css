@@ -1,0 +1,1 @@
+temos que apreender outra linguagem para enviar os dados e gravar em um banco de dados
