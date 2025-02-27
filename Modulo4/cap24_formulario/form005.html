@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de checkbox e Radio</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <FIeldset>
+            <LEGend>Sexo</LEGend>
+            <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isfem" value="F"><label for="isfem">Feminino</label>
+        </FIeldset>
+    <fieldset>
+        <legend>Esportes Favotiros</legend>
+        <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>
+        <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label>
+        <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tenis</label>
+        <input type="checkbox" name="escic" id="iescic" checked> <label for="iescic">Ciclismo</label>
+        <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label>
+    </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
