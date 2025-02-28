@@ -20,15 +20,20 @@ Tvs: acima de 1200px
     main h1{
         text-shadow: none;
         color: black;
+    }
+    main::after{
+        content: 'Essa impressão foi feita atraves do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
 }
 
-
-}
 
 @media screen and (min-width: 768px) and (max-width: 992px){
+
     body{
         background-image: url(../imagens/back-tablet.jpg);
     }
+
     img#phone{display: none;}
     img#tablet{display: block;}
     img#pc{display: none;}
@@ -37,22 +42,27 @@ Tvs: acima de 1200px
 }
 
 @media screen and (min-width:992px) and (max-width:1200px ){
+
     body{
         background-image: url(../imagens/back-pc.jpg);
     }
+
     img#phone{display: none;}
     img#tablet{display: none;}
     img#pc{display: block;}
     img#tv{display: none;}
     img#print{display: none;}
 }
-@media screen and (min-width:1200px)and {
+@media screen and (min-width: 1200px){
+
     body{
         background-image: url(../imagens/back-tv.jpg);
     }
+
     main{
         width: 700px;
     }
+
     img#phone{display: none;}
     img#tablet{display: none;}
     img#pc{display: none;}
