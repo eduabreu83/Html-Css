@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+</head>
+<style>
+    div.conteiner{
+        background-color: antiquewhite;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    div.item{
+        background-color: rgb(146, 127, 255);
+        border: 1px solid rgb(10, 10, 10);
+        text-align: center;
+        flex-basis: 200px;
+    }
+
+    div#cxA{
+        /*
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 200px;
+        */
+        flex: 1 0 200px;
+
+        /* flex: 0 1 auto ==== Padrão
+        Flex: initial ==== simplificação
+        Flex: 0 0 auto ==== não deixa flexivel
+        flex: nome ==== deixa o item fixo no container
+        flex: 1 1 auto  e flex: auto === deixa tudo flexsivel
+        flex: caso vc coloque só um parameto só valerá para o grow e se manterá o padrão para os outros
+        */
+    }
+    
+    div#cxB{
+        flex: 1 1 100px;
+    }
+
+
+    div#cxC{
+        flex: 1 8 auto;
+    }
+
+</style>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B </div>
+        <div class="item" id="cxC">C</div>
+    </div>
+</body>
+</html>
