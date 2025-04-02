@@ -17,14 +17,23 @@ body{
 header{
     background-color: lightslategray;
     padding: 10px;
-    border: 1px dotted black;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 header > h1{
     color: white;
     border: 1px dotted black;
+    flex: 0 0 150px
 }
 header > nav {
-border: 1px dotted black;
+    border: 1px dotted black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
 }
 
 header > nav > a{
@@ -40,7 +49,7 @@ header > nav > a{
 header > nav > :hover{
     background-color: white;
     color: black;
-    transition: ackground-color .5s;
+    transition: background-color .5s;
 }
 main{
     background-color: white;
