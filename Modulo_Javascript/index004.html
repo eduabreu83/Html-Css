@@ -16,8 +16,12 @@
         document.write(`o nome ${nome.bold()} tem: ${nome.length} letras <br/>`)
         document.write(` Seu nome em maiusculas é ${nome.toUpperCase()} <br/>`)
         var valor = window.prompt('Digite um valor:')
-        document.write(`Em sua conta bancaria em 2027 terá:`)
-        valor.toLocateString('pt-BR', {style:'currency', currency: 'BRL'})
+        var mult = valor * 1000
+        var mult1 = mult.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})//voltar aqui par verificar como mostrar o valor
+        document.write(`Em sua conta bancaria em 2027 terá: ${mult1}` )
+
+
+        
          
     </script>
 </body>
