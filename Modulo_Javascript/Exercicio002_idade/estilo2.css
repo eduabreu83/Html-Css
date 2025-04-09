@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+body{
+    background-color: rgb(75, 135, 175);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+header > h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+    text-align: center;
+    margin: auto;
+    
+}
+div#res{
+    text-align: center;
+}
+
+div#imgd{
+    padding: 30px;
+    text-align: center;
+}
+
+
+input#button{
+    background-color: rgb(215, 219, 219);
+    text-align: center;
+    border-radius: 5px;
+    border: 0px;
+    height: 30px;
+}
+
+
+footer{
+    padding: 20px;
+    font-size: 13px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
