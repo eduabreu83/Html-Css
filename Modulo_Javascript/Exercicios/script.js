@@ -5,11 +5,11 @@ function carregar() {
     var data = new Date()
     var hora = data.getHours()
     msg.innerHTML = `Agora são ${hora} horas.`
-    if(hora >= 0 && hora < 12 ){
+    if (hora >= 0 && hora < 12 ) {
         img.src = 'dia.png'
-    }else if(hora >=12 && hora < 18){
+    } else if (hora >= 12 && hora < 18){
         img.src = 'tarde.png'
-    }else{
+    } else{
         img.src = 'noite.png'
     }
 }
