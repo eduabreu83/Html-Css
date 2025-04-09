@@ -22,6 +22,11 @@ section {
     text-align: center;
 }
 
+div#foto{
+    padding: 30px;
+    text-align: center;
+}
+
 footer{
     font-size: 13px;
     color: white;
