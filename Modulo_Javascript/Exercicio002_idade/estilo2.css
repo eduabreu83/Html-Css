@@ -8,8 +8,7 @@ body{
 
 header > h1{
     color: white;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 section {
@@ -17,34 +16,23 @@ section {
     border-radius: 10px;
     padding: 15px;
     width: 500px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
-    text-align: center;
     margin: auto;
-    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
 }
+
 div#res{
     text-align: center;
 }
 
-div#imgd{
-    padding: 30px;
+div#resimg{
     text-align: center;
+    padding: 20px;
 }
-
-
-input#button{
-    background-color: rgb(215, 219, 219);
-    text-align: center;
-    border-radius: 5px;
-    border: 0px;
-    height: 30px;
-}
-
 
 footer{
     padding: 20px;
     font-size: 13px;
     color: white;
-    display: flex;
-    justify-content: center;
+    font-style: italic;
+    text-align: center;
 }
