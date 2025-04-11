@@ -10,8 +10,8 @@ if (fano.value.length == 0 || Number (fano.value)> ano){
     var idade = ano - Number(fano.value)
     //res.innerHTML = `Idade Calculada: ${idade}`
     var genero = ''
-    if (fsex[0].checked){
-        genero = 'Homen'
+    if (fsex[0].checked) {
+        genero = 'Homem'
     } else if (fsex[1].checked){
         genero = 'Mulher'
     }
