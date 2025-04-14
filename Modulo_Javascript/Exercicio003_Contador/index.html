@@ -3,33 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador de Passos</title>
+    <title>Tabuada Maneira</title>
     <link rel="stylesheet" href="estilo2.css">
 </head>
 <body>
 
     <header>
-        <h1>Contador de Passos</h1>
+        <h1>Faz sua tabuada maeira</h1>
     </header>
     <section>
         <div>
-            <p>Inicio:
-                <input type="number" name="txti"id="txti" min="0">
+            <p>Qual a tabuada desejada ?:
+                <input type="number" name="txtn"id="txtn" min="0">
+                <input type="button" value="Gerar Tabuada" onclick="tabuada()">
             </p>
 
-            <p>Fim: 
-                <input type="number" name="txtf"id="txtf" min="0">
-            </p>
-
-            <p>Passos: 
-                <input type="number" name="txtp"id="txtp" min="0">
-            </p>
-            <p>
-                <input id="button" type="submit" value="Contar " id="Contar" onclick="contar()">
-            </p>
         </div>
-        <div id="res">
-            Preparando a Contagem dos valores...
+
+        <div>
+            <select name="tabuada" id="seltab"></select>
         </div>
 
     </section>
